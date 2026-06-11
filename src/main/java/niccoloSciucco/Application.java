@@ -62,8 +62,7 @@ public class Application {
                 ));
 
         totaleVendite.forEach((customer, totalAmount) -> {
-            System.out.printf("Cliente: %s (ID: %d) -> Totale Speso: %.2f€%n",
-                    customer.getName(), customer.getId(), totalAmount);
+            System.out.println("Cliente: " + customer.getName() + " (ID: " + customer.getId() + ") -> Totale Speso: " + totalAmount + "€");
         });
     }
 }
